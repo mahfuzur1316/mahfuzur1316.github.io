@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdSense Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .adsense {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            border: 1px dashed #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My AdSense Test Page</h1>
+    </header>
+    <main>
+        <h2>About This Page</h2>
+        <p>This is a test page to demonstrate Google AdSense integration. Below, you will see the ad displayed using your AdSense code.</p>
+        
+        <!-- Google AdSense Code -->
+        <div class="adsense">
+            <!-- Replace with your AdSense code -->
+            YOUR_ADSENSE_CODE
+        </div>
+
+        <h2>More Information</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non bibendum justo. Fusce vehicula justo vitae ex congue, id tristique leo interdum.</p>
+        <p>Aliquam erat volutpat. Sed vitae ligula sed elit gravida commodo. Nulla facilisi. Duis efficitur, nisl a sodales vehicula, leo nisl sagittis elit, id tincidunt arcu sapien in sapien.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 My AdSense Test Page</p>
+    </footer>
+</body>
+</html>
