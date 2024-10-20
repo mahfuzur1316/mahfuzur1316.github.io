@@ -51,10 +51,8 @@
         <p>This is a test page to demonstrate Google AdSense integration. Below, you will see the ad displayed using your AdSense code.</p>
         
         <!-- Google AdSense Code -->
-        <div class="adsense">
-            <!-- Replace with your AdSense code -->
-            YOUR_ADSENSE_CODE
-        </div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7323508762348582"
+     crossorigin="anonymous"></script>
 
         <h2>More Information</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non bibendum justo. Fusce vehicula justo vitae ex congue, id tristique leo interdum.</p>
