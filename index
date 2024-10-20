@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AdSense Test Page</title>
+    <title>Your Site Title</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,7 +23,7 @@
             max-width: 800px;
             margin: auto;
             background: white;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         footer {
             text-align: center;
@@ -41,6 +41,8 @@
             border: 1px dashed #007bff;
         }
     </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7323508762348582"
+        crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -51,15 +53,23 @@
         <p>This is a test page to demonstrate Google AdSense integration. Below, you will see the ad displayed using your AdSense code.</p>
         
         <!-- Google AdSense Code -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7323508762348582"
-     crossorigin="anonymous"></script>
+        <div class="adsense">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-7323508762348582"
+                 data-ad-slot="YOUR_AD_SLOT"
+                 data-ad-format="auto"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
 
         <h2>More Information</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non bibendum justo. Fusce vehicula justo vitae ex congue, id tristique leo interdum.</p>
         <p>Aliquam erat volutpat. Sed vitae ligula sed elit gravida commodo. Nulla facilisi. Duis efficitur, nisl a sodales vehicula, leo nisl sagittis elit, id tincidunt arcu sapien in sapien.</p>
     </main>
     <footer>
-        <p>&copy; 2024 My AdSense Test Page</p>
+        <p>&copy; 2024 Your Site Name</p>
     </footer>
 </body>
 </html>
