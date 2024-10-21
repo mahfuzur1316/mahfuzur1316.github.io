@@ -3,73 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Site Title</title>
+    <title>Basic Good-Looking Website</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset some default styles */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             color: #333;
+            line-height: 1.6;
         }
+
         header {
-            background-color: #007bff;
-            color: white;
-            padding: 20px;
+            background-color: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
             text-align: center;
         }
-        main {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        header h1 {
+            margin-bottom: 10px;
         }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .content .card {
+            flex: 1;
+            padding: 20px;
+            margin: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content .card h3 {
+            margin-bottom: 10px;
+        }
+
         footer {
+            background-color: #35424a;
+            color: #ffffff;
             text-align: center;
-            padding: 10px;
-            background-color: #007bff;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            padding: 10px 0;
+            margin-top: 20px;
         }
-        .adsense {
-            margin: 20px 0;
-            text-align: center;
-            padding: 10px;
-            border: 1px dashed #007bff;
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
         }
     </style>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7323508762348582"
-        crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My AdSense Test Page</h1>
-    </header>
-    <main>
-        <h2>About This Page</h2>
-        <p>This is a test page to demonstrate Google AdSense integration. Below, you will see the ad displayed using your AdSense code.</p>
-        
-        <!-- Google AdSense Code -->
-        <div class="adsense">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-7323508762348582"
-                 data-ad-slot="YOUR_AD_SLOT"
-                 data-ad-format="auto"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
 
-        <h2>More Information</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non bibendum justo. Fusce vehicula justo vitae ex congue, id tristique leo interdum.</p>
-        <p>Aliquam erat volutpat. Sed vitae ligula sed elit gravida commodo. Nulla facilisi. Duis efficitur, nisl a sodales vehicula, leo nisl sagittis elit, id tincidunt arcu sapien in sapien.</p>
-    </main>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Our Features</h2>
+        <div class="content">
+            <div class="card">
+                <h3>Feature One</h3>
+                <p>Some description about the first feature.</p>
+            </div>
+            <div class="card">
+                <h3>Feature Two</h3>
+                <p>Some description about the second feature.</p>
+            </div>
+            <div class="card">
+                <h3>Feature Three</h3>
+                <p>Some description about the third feature.</p>
+            </div>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2024 Your Site Name</p>
+        <p>&copy; 2024 My Website | Designed by You</p>
     </footer>
+
 </body>
 </html>
